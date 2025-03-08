@@ -1,0 +1,164 @@
+/* Til første beskrivelse av prosjektet */
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  row-gap: 20px;
+  column-gap: 80px;
+  justify-items: start; /* Center items horizontally within the grid cells */
+  margin: 0 auto;
+  padding-left: 250px; /* Optional: Add padding to prevent content touching edges */
+  padding-right: 250px;
+}
+
+/*2 kolonner, forskjellig størrelse på kolonnene*/
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  grid-auto-rows: auto;
+  gap: 5px;
+}
+
+/*Tre kolonner*/
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 20px; /* Space between grid items */
+  text-align: center; /* Center text horizontally */
+  justify-items: center; /* Center content horizontally in the grid cells */
+}
+
+/*to kolonner*/
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  row-gap: 20px;
+  column-gap: 80px;
+  justify-items: start; /* Center items horizontally within the grid cells */
+  margin: 0 auto;
+  padding-left: 100px; /* Optional: Add padding to prevent content touching edges */
+  padding-right: 100px;
+}
+
+/*FIRE på rad*/
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Three equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 20px; /* Space between grid items */
+  text-align: center; /* Center text horizontally */
+  justify-items: center; /* Center content horizontally in the grid cells */
+}
+
+.grid-container6 {
+  display: grid;
+  grid-template-columns: 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  row-gap: 20px;
+  column-gap: 80px;
+  justify-items: center; /* Center items horizontally within the grid cells */
+  margin: 0 auto;
+  padding-left: 100px; /* Optional: Add padding to prevent content touching edges */
+  padding-right: 100px;
+}
+
+/*BILDER*/
+/*Grid for to bilder*/
+.grid-container2-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.grid-container3-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 10px; /* Space between grid items */
+  justify-items: center; /* Center content horizontally in the grid cells */
+}
+
+/*KNAPPER*/
+.grid_container_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Three equal columns */
+  gap: 15px;
+}
+
+/*PLASSERING I GRID*/
+.grid_placement1 {
+  grid-column: 1; /* Move to the first column */
+}
+
+.grid_placement2 {
+  grid-column: 2; /* Move to the second column */
+}
+
+/*STYLING*/
+
+/*Farge på nummer*/
+.number_styling {
+  font-size: var(--normal-font-size);
+  color: #06009b;
+  font-weight: var(--font-semi-bold);
+  align-items: center;
+}
+
+/*Farge på boks*/
+.item_box_dissimilis {
+  padding: 20px;
+  background: #e5e4ff; /* Optional: add background for visibility */
+  font-size: var(--small-font-size);
+  color: #000;
+  font-weight: var(--font-normal);
+  align-items: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /*GRID CONTAINERS*/
+  /* Til første beskrivelse av prosjektet */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 10px;
+    column-gap: 40px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 50px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 50px;
+  }
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 10px;
+    column-gap: 40px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 50px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 50px;
+  }
+}
+
+/*MÅ JOBBES VIDERE MED- FINNES DET MINDRE MOBILER I DENNE STR???*/
+/*for small devices*/
+@media screen and (max-width: 600px) {
+  /*Første grid*/
+  /* Til første beskrivelse av prosjektet */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 10px;
+    column-gap: 30px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 100px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 100px;
+  }
+}

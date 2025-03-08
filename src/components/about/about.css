@@ -1,0 +1,135 @@
+.about_margin_top {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.about_image_margin {
+  margin-top: 50px;
+}
+
+.about_image_margin2 {
+  margin-top: 80px;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  justify-items: start; /* Center items horizontally within the grid cells */
+  gap: 120px;
+}
+
+.about__img {
+  background: url(../../assets/aboutAssets/anna.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
+  order: 1;
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  animation: profile__animate 8s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.about__info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.about__box {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+
+.about__icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+}
+
+.about_title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--home-font);
+}
+
+.about__subtitle {
+  font-size: var(--tiny-font-size);
+}
+
+.about__description {
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--mb-2-5);
+}
+
+.hobby__container {
+  padding: 0 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+/*===========BREAKPOINTS ============*/
+/*For large devices*/
+@media screen and (max-width: 992px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+  .about__img {
+    width: 220px;
+  }
+  .about__box {
+    padding: 0.75rem 0.5rem;
+  }
+  .about__data {
+    text-align: center;
+  }
+  .about__info {
+    justify-content: center;
+  }
+  .about__description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+  .hobby__container {
+    padding: 0 5rem;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+/*for medium devices*/
+@media screen and (max-width: 576px) {
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about__description {
+    padding: 0;
+  }
+}
+
+/*for small devices*/
+@media screen and (max-width: 350px) {
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
