@@ -218,3 +218,157 @@
 .work_card:hover .work_subtitle {
   color: #000000; /* Endrer tekstfargen til svart */
 }
+
+/* Justering for skjermer med max-width 768px */
+
+@media (max-width: 768px) {
+  .work_thumbnail {
+    width: 40%;
+    margin: 0;
+  }
+  /* Bruk flexbox for å vise bildene og teksten ved siden av hverandre */
+  .work_card {
+    display: flex; /* Bruk flexbox */
+    flex-direction: row; /* Vis bildene og teksten på samme rad */
+    width: 100%; /* Sett bredden til 100% */
+    height: 270px; /* La høyden justeres automatisk */
+    margin: 5px 0; /* Juster marginene rundt kortene */
+    gap: 0px; /* Fjern gap mellom elementene i flex-containeren */
+  }
+
+  /* Juster størrelsen på bildene for å passe til mobilen */
+  .work_img {
+    width: 60%; /* Sett bredden til 60% for å vise bildet ved siden av teksten */
+    height: 100%; /* Sørg for at bildet fyller høyden på kortet */
+    object-fit: cover; /* Sørg for at bildene ikke blir forvrengt */
+    margin-right: 5px; /* Legg til liten margin for å skille bildet og teksten */
+  }
+
+  /* Juster teksten til å ta opp den andre halvdelen av kortet */
+  .work_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Juster teksten vertikalt */
+    padding: 0px; /* Juster padding for å få litt luft */
+    width: 40%; /* Sett bredden til 40% for at det skal være plass til bildet */
+  }
+
+  /* Juster tittel og undertittel */
+  .work_title {
+    font-size: 2rem; /* Reduser skriftstørrelsen for bedre plass på mobilen */
+    padding-top: 5px; /* Reduser padding-top */
+  }
+
+  .work_subtitle {
+    font-size: 1.1rem; /* Reduser undertittelens skriftstørrelse */
+  }
+
+  /* Reduser knappene og juster layouten */
+  .category-button {
+    padding: 8px 15px; /* Mindre padding */
+    font-size: 0.9rem; /* Reduser font-størrelsen på knappene */
+  }
+
+  .category_button_container {
+    flex-direction: column; /* Stakk knappene vertikalt */
+    align-items: flex-start; /* Juster knappene til venstre */
+  }
+
+  .button_wrapper {
+    padding-top: 20px;
+    gap: 10px; /* Reduser avstanden mellom knappene */
+    justify-content: flex-start; /* Juster knappene til venstre */
+  }
+
+  /* Juster bilde-spesifikasjoner for de enkelte kategoriene */
+  .dissimilis-img {
+    width: 90%; /* Sett bredden på bildene til 50% */
+    height: auto; /* La høyden tilpasse seg */
+  }
+
+  .skumring-img {
+    width: 55%;
+    height: auto;
+  }
+
+  .veles-img {
+    width: 68%;
+    height: auto;
+  }
+}
+
+@media (max-width: 508px) {
+  .work_thumbnail {
+    width: 40%;
+    margin: 0;
+  }
+  /* Bruk flexbox for å vise bildene og teksten ved siden av hverandre */
+  .work_card {
+    display: flex; /* Bruk flexbox */
+    flex-direction: row; /* Vis bildene og teksten på samme rad */
+    width: 100%; /* Sett bredden til 100% */
+    height: 150px; /* La høyden justeres automatisk */
+    margin: 5px 0; /* Juster marginene rundt kortene */
+    gap: 0px; /* Fjern gap mellom elementene i flex-containeren */
+  }
+
+  /* Juster størrelsen på bildene for å passe til mobilen */
+  .work_img {
+    width: 60%; /* Sett bredden til 60% for å vise bildet ved siden av teksten */
+    height: 100%; /* Sørg for at bildet fyller høyden på kortet */
+    object-fit: cover; /* Sørg for at bildene ikke blir forvrengt */
+    margin-right: 5px; /* Legg til liten margin for å skille bildet og teksten */
+  }
+
+  /* Juster teksten til å ta opp den andre halvdelen av kortet */
+  .work_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Juster teksten vertikalt */
+    padding: 0px; /* Juster padding for å få litt luft */
+    width: 40%; /* Sett bredden til 40% for at det skal være plass til bildet */
+  }
+
+  /* Juster tittel og undertittel */
+  .work_title {
+    font-size: 1.2rem; /* Reduser skriftstørrelsen for bedre plass på mobilen */
+    padding-top: 5px; /* Reduser padding-top */
+  }
+
+  .work_subtitle {
+    font-size: 0.8rem; /* Reduser undertittelens skriftstørrelse */
+  }
+
+  /* Reduser knappene og juster layouten */
+  .category-button {
+    padding: 8px 12px; /* Mindre padding */
+    font-size: 0.8rem; /* Reduser font-størrelsen på knappene */
+  }
+
+  .category_button_container {
+    flex-direction: column; /* Stakk knappene vertikalt */
+    align-items: flex-start; /* Juster knappene til venstre */
+  }
+
+  .button_wrapper {
+    padding-top: 20px;
+    gap: 10px; /* Reduser avstanden mellom knappene */
+    justify-content: flex-start; /* Juster knappene til venstre */
+  }
+
+  /* Juster bilde-spesifikasjoner for de enkelte kategoriene */
+  .dissimilis-img {
+    width: 90%; /* Sett bredden på bildene til 50% */
+    height: auto; /* La høyden tilpasse seg */
+  }
+
+  .skumring-img {
+    width: 60%;
+    height: auto;
+  }
+
+  .veles-img {
+    width: 75%;
+    height: auto;
+  }
+}

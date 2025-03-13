@@ -10,7 +10,6 @@ const About = () => {
   return (
     <section className="container about_margin_top" id="about">
       <div className="about_container">
-        {/* About Description */}
         <div>
           <h1 className="about_title"> Litt om meg </h1>
           <p className="body_text">
@@ -37,11 +36,8 @@ const About = () => {
             samarbeide, lære nye ting og bidra til meningsfulle prosjekter. Jeg
             gleder meg til nye utfordringer i årene som kommer.
           </p>
-
-          {/* Download CV Button */}
         </div>
 
-        {/* About Image */}
         <div className="">
           <div className="container grid about_image_margin">
             <img className="about__img" src={AboutImg} alt="Anna Hansgård" />

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom"; // Importer useNavigate
-import { FaBars } from "react-icons/fa"; // Importer burger-ikonet
 import "./header.css";
+
+import menu_icon from "../../assets/menu_icon.svg";
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
@@ -127,7 +128,7 @@ const Header = () => {
 
         {/* Hamburgermeny for mobil */}
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <FaBars /> {/* Bruker burger-ikonet */}
+          <img src={menu_icon} alt="menu icon" />
         </div>
       </nav>
     </header>
