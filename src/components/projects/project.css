@@ -37,6 +37,10 @@
   padding-bottom: 50px;
 }
 
+.margin_picture_text {
+  margin-left: 180px;
+}
+
 /*BILDER*/
 /*padding rundt bilder*/
 
@@ -85,6 +89,11 @@
 .top_color_Skumring {
   background-color: #c0cfeb;
 }
+
+.top_color_Veles {
+  background-color: #eaebdd;
+}
+
 .top_image {
   max-width: 50%;
   height: auto;
@@ -134,7 +143,28 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.scroll_button_Veles {
+  padding: 10px 25px;
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  border: 1px solid #363f1e;
+  background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .scroll_button:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Svart bakgrunn med 50% opasitet ved hover */
+  color: #000000; /* Hvit tekstfarge ved hover */
+}
+
+.scroll_button_Veles:hover {
   background-color: rgba(
     0,
     0,
@@ -166,8 +196,23 @@
   transition: #1a1d57 0.3s ease;
 }
 
+.button_Veles {
+  padding: 10px 25px;
+  font-size: var(--normal-font-size);
+  background-color: #363f1e;
+  color: #fff;
+  border: 1px solid #363f1e;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: #363f1e 0.3s ease;
+}
+
 .button_skumring:hover {
   background-color: #3b3d7b;
+}
+
+.button_Veles:hover {
+  background-color: #4e5b2b;
 }
 
 .button:hover {
@@ -226,6 +271,12 @@
   font-weight: var(--font-medium);
 }
 
+.level3_headlines_Veles {
+  font-size: var(----h3-font-size);
+  color: #363f1e;
+  font-weight: var(--font-medium);
+}
+
 /*Lilla tekst til små overskrifter*/
 .text_very_small {
   font-size: var(--small-font-size);
@@ -239,6 +290,15 @@
 .text_very_small_skumring {
   font-size: var(--small-font-size);
   color: #003ca3;
+  font-weight: var(--font-semi-bold);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_very_small_Veles {
+  font-size: var(--small-font-size);
+  color: #363f1e;
   font-weight: var(--font-semi-bold);
   max-width: 700px;
   margin-left: auto;

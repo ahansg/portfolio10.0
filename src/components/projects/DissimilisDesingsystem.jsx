@@ -7,7 +7,7 @@ import ZoomableImageGallery from "../image/ZoomableImageGallery";
 import Arrow_down from "../../assets/projectAssets/arrow_down.svg";
 import Arrow_side from "../../assets/projectAssets/Arrow_side.svg";
 
-const Project5 = () => {
+const DissimilisDesignsystem = () => {
   return (
     <div id="top">
       {/*Top section with image*/}
@@ -147,7 +147,7 @@ const Project5 = () => {
           </div>
         </div>
 
-        <div className="project_container">
+        <div className="project_container project-margin-between-items">
           <h1 className="level1_headlines">Partitursiden -før og etter</h1>
         </div>
         <div className="picture_inline picture_padding_top grid-container2-image">
@@ -182,7 +182,7 @@ const Project5 = () => {
 
         <ZoomableImageGallery id="47" />
 
-        <div className="project_container">
+        <div className="project_container project-margin-between-items">
           <h2 className="level2_headlines">Eksempel - endring av farger</h2>
           <div className="padding_sectioning">
             <p className="body_text">
@@ -195,19 +195,21 @@ const Project5 = () => {
           </div>
         </div>
 
-        <ZoomableImageGallery id="48" />
-        <p className=" text_image">Før</p>
-        <div className="picture_padding_top image_center">
-          <img src={Arrow_down} alt="Arrow down" />
-        </div>
-        <div className="picture_padding_top">
-          <ZoomableImageGallery id="49" />
-        </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="48" />
+          <p className="margin_picture_text text_image">Før</p>
+          <div className="picture_padding_top image_center">
+            <img src={Arrow_down} alt="Arrow down" />
+          </div>
+          <div className="picture_padding_top">
+            <ZoomableImageGallery id="49" />
+          </div>
 
-        <p className=" text_image">
-          Utklipp: Menyen i partituret endret seg drastisk etter de nye fargene
-          kom på plass
-        </p>
+          <p className="margin_picture_text text_image">
+            Utklipp: Menyen i partituret endret seg drastisk etter de nye
+            fargene kom på plass
+          </p>
+        </div>
 
         <div className="grid-container1">
           <div className="grid-container3-image">
@@ -260,21 +262,21 @@ const Project5 = () => {
 
         <section className="picture_padding">
           <ZoomableImageGallery id="55" />
-          <p className=" text_image">
+          <p className="margin_picture_text text_image">
             Utklipp: Font og fontvekt er presisert, der stilene bestemmer
             hvilken en skal benytte seg av
           </p>
         </section>
         <div className="picture_padding">
           <ZoomableImageGallery id="56" />
-          <p className=" text_image">
+          <p className="margin_picture_text text_image">
             Utklipp: Hver stil har en beskrivelse av hvor den skal brukes og
             hvilken størrelse og stil den har
           </p>
         </div>
         <div className="picture_padding">
           <ZoomableImageGallery id="57" />
-          <p className=" text_image">
+          <p className="margin_picture_text text_image">
             Utklipp: Her er en overordnet oversikt over de forskjellige
             størrelsene. Stiltype bestemmer hvilken størrelse som skal benyttes.{" "}
           </p>
@@ -300,40 +302,39 @@ const Project5 = () => {
             <p className="body_text ">
               I løpet av ukene vi jobbet med designsystemet fikk vi på plass
               flere komponenter slik som knapper, Inputfelt, Søkefelt,
-              Dropdownmeny, Togglebuttons og Radiobuttons. Hver komponent tre
-              "states". En for
+              Dropdownmeny, Togglebuttons og Radiobuttons.
             </p>
           </div>
-        </div>
 
-        <h1 className="level1_headlines">Eksempel- ToggleButtons</h1>
+          <h1 className="level1_headlines">Eksempel- ToggleButtons</h1>
+
+          <p className="body_text ">
+            Hver komponent har en egen side med beskrivelse av komponenten,
+            retningslinjer for bruk, og hovedkomponenter. Dette for å gjøre det
+            enkelt for utviklerne og fremtidige designere å vite når og hvor de
+            forskjellige komponentene skal benyttes
+          </p>
+        </div>
 
         <section className="picture_padding">
-          <ZoomableImageGallery id="55" />
-          <p className=" text_image">
-            Utklipp: Font og fontvekt er presisert, der stilene bestemmer
-            hvilken en skal benytte seg av
+          <ZoomableImageGallery id="59" />
+          <p className="margin_picture_text text_image">
+            Utklipp: Hele siden for Togglebuttons
           </p>
         </section>
-        <div className="picture_padding">
-          <ZoomableImageGallery id="56" />
-          <p className=" text_image">
-            Utklipp: Hver stil har en beskrivelse av hvor den skal brukes og
-            hvilken størrelse og stil den har
-          </p>
-        </div>
-        <div className="picture_padding">
-          <ZoomableImageGallery id="57" />
-          <p className=" text_image">
-            Utklipp: Her er en overordnet oversikt over de forskjellige
-            størrelsene. Stiltype bestemmer hvilken størrelse som skal benyttes.{" "}
-          </p>
+        <div className="grid-container2-image">
+          <div className="picture_padding">
+            <ZoomableImageGallery id="60" />
+          </div>
+
+          <ZoomableImageGallery id="61" />
+          <p className="margin_picture_text text_image">Utklipp fra siden</p>
         </div>
 
         {/*SAMLEDE KOMPONENTER*/}
         <section id="samlede_komponenter" className="theme_container">
           <div className="heading_with_arrow">
-            <h2 className="level3_headlines">03. Komponenter</h2>
+            <h2 className="level3_headlines">04. Samlede komponenter</h2>
             <button
               onClick={() => document.getElementById("top").scrollIntoView()}
               className="arrow_button arrow_icon"
@@ -347,40 +348,46 @@ const Project5 = () => {
 
         <div className="project_container">
           <div className="padding_sectioning grid_placement2">
-            <p className="body_text ">
-              I løpet av ukene vi jobbet med designsystemet fikk vi på plass
-              flere komponenter slik som knapper , Inputfelt, Søkefelt,
-              Dropdownmeny, Togglebuttons og Radiobuttons.
-            </p>
+            <h1 className="level1_headlines">
+              Alle komponentene i forskjellige states
+            </h1>
           </div>
         </div>
-
-        <h1 className="level1_headlines">Eksempel- ToggleButtons</h1>
-
         <section className="picture_padding">
-          <ZoomableImageGallery id="55" />
-          <p className=" text_image">
-            Utklipp: Font og fontvekt er presisert, der stilene bestemmer
-            hvilken en skal benytte seg av
-          </p>
+          <ZoomableImageGallery id="69" />
         </section>
         <div className="picture_padding">
-          <ZoomableImageGallery id="56" />
-          <p className=" text_image">
-            Utklipp: Hver stil har en beskrivelse av hvor den skal brukes og
-            hvilken størrelse og stil den har
-          </p>
+          <ZoomableImageGallery id="70" />
         </div>
         <div className="picture_padding">
-          <ZoomableImageGallery id="57" />
-          <p className=" text_image">
-            Utklipp: Her er en overordnet oversikt over de forskjellige
-            størrelsene. Stiltype bestemmer hvilken størrelse som skal benyttes.{" "}
-          </p>
+          <ZoomableImageGallery id="71" />
         </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="72" />
+        </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="73" />
+        </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="74" />
+        </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="75" />
+        </div>
+        <div className="picture_padding">
+          <ZoomableImageGallery id="76" />
+        </div>
+      </div>
+      <div className="button_container theme_container">
+        <button
+          className="button"
+          onClick={() => document.getElementById("top").scrollIntoView()}
+        >
+          Til toppen
+        </button>
       </div>
     </div>
   );
 };
 
-export default Project5;
+export default DissimilisDesignsystem;

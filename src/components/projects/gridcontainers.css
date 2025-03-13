@@ -106,10 +106,27 @@
   align-items: center;
 }
 
+.number_styling_Veles {
+  font-size: var(--normal-font-size);
+  color: #363f1e;
+  font-weight: var(--font-semi-bold);
+  align-items: center;
+}
+
 /*Farge på boks*/
 .item_box_dissimilis {
   padding: 20px;
   background: #e5e4ff; /* Optional: add background for visibility */
+  font-size: var(--small-font-size);
+  color: #000;
+  font-weight: var(--font-normal);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.item_box_Veles {
+  padding: 20px;
+  background: #e1e2c0; /* Optional: add background for visibility */
   font-size: var(--small-font-size);
   color: #000;
   font-weight: var(--font-normal);

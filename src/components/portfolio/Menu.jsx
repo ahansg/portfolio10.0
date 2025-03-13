@@ -11,7 +11,7 @@ const Menu = [
     title: "Brukernes ønsker",
     subtitle: "-Dissimilis fargenotasjonsapp",
     category: "Dissimilis",
-    path: "/project1",
+    path: "/DissimilisOnsker",
     style: "#E5E4FF",
   },
   {
@@ -20,7 +20,7 @@ const Menu = [
     title: "Skumring",
     subtitle: "-Prosjektoppgave 2024",
     category: "Skumring",
-    path: "/project2",
+    path: "/Skumring",
     style: "#C0CFEB",
   },
   {
@@ -29,7 +29,7 @@ const Menu = [
     title: "Veles",
     subtitle: "- Prosjektoppgave 2023",
     category: "Veles",
-    path: "/project3",
+    path: "/Veles",
     style: "#EAEBDD",
   },
   {
@@ -38,7 +38,7 @@ const Menu = [
     title: "Experis Solutions ønsker",
     subtitle: "- Dissimilis fargenotasjonsapp",
     category: "Dissimilis",
-    path: "/project4",
+    path: "/ExperisOnsker",
     style: "#E5E4FF",
   },
   {
@@ -47,7 +47,7 @@ const Menu = [
     title: "Designsystem",
     subtitle: "- Dissimilis fargenotasjonsapp",
     category: "Dissimilis",
-    path: "/project5",
+    path: "/DissimilisDesignsystem",
     style: "#E5E4FF",
   },
 ];

@@ -1,0 +1,129 @@
+/* Reset og generelle stiler */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "josefin sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header styling */
+header {
+  background-color: var(--body-color);
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container nav .logo {
+  color: #212a3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navigasjonsmeny */
+.container .nav-link {
+  display: flex;
+  position: static;
+  background: none;
+  width: auto;
+  box-shadow: none;
+  flex-direction: row;
+  padding: 0;
+}
+
+.container .nav-link.active {
+  display: flex;
+}
+
+.container .nav-link li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.container ul li a {
+  color: #212a3c;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 4px;
+}
+
+.container ul li a:hover,
+.container ul li a.active {
+  background-color: #ecf0f1;
+}
+
+/* Meny-ikon */
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+
+  .container .nav-link {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -100%;
+    right: 0;
+    z-index: 10;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  .nav-link.active {
+    top: 100%;
+    display: flex;
+  }
+}

@@ -10,11 +10,11 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
-import Project1 from "./components/projects/Project1";
-import Project2 from "./components/projects/Project2";
-import Project3 from "./components/projects/Project3";
-import Project4 from "./components/projects/Project4";
-import Project5 from "./components/projects/Project5";
+import DissmilisOnsker from "./components/projects/DissimilisOnsker";
+import Skumring from "./components/projects/Skumring";
+import Veles from "./components/projects/Veles";
+import ExperisOnsker from "./components/projects/ExperisOnsker";
+import DissimilisDesignsystem from "./components/projects/DissimilisDesingsystem";
 
 // Komponent for å håndtere scroll til toppen ved ruteendring
 const ScrollToTop = () => {
@@ -38,11 +38,14 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/project1" element={<Project1 />} />
-          <Route path="/project2" element={<Project2 />} />
-          <Route path="/project3" element={<Project3 />} />
-          <Route path="/project4" element={<Project4 />} />
-          <Route path="/project5" element={<Project5 />} />
+          <Route path="/DissimilisOnsker" element={<DissmilisOnsker />} />
+          <Route path="/Skumring" element={<Skumring />} />
+          <Route path="/Veles" element={<Veles />} />
+          <Route path="/ExperisOnsker" element={<ExperisOnsker />} />
+          <Route
+            path="/DissimilisDesignsystem"
+            element={<DissimilisDesignsystem />}
+          />
         </Routes>
       </main>
     </Router>

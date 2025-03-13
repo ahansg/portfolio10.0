@@ -1,4 +1,4 @@
-/*PROJECT 1*/
+/*DISSIMILIS ONSKER*/
 import DissimilisWishes from "../../assets/projectAssets/project1/DissimilisWishes.png";
 import Piano from "../../assets/projectAssets/project1/Piano.png";
 import SystemUsability from "../../assets/projectAssets/project1/SystemUsabilityScale.png";
@@ -19,7 +19,7 @@ import OpptakSkjerm from "../../assets/projectAssets/project1/OpptakSkjerm.png";
 import Skissering_sangtekst from "../../assets/projectAssets/project1/Skissering_sangtekst.png";
 import Videreutvikling_sangtekst from "../../assets/projectAssets/project1/Videreutvikling_sangtekst.png";
 
-/*PROJECT 4 */
+/*EXPERIS ONSKER */
 import ExperisWishes from "../../assets/projectAssets/project4/Experis_onsker_forside.png";
 import Dissimilis from "../../assets/projectAssets/project4/dissimilis.jpg";
 import Geriljatesting from "../../assets/projectAssets/project4/Geriljatesting.png";
@@ -32,7 +32,7 @@ import CrazyEight1 from "../../assets/projectAssets/project4/CrazyEight1.png";
 import CrazyEight2 from "../../assets/projectAssets/project4/CrazyEight2.png";
 import Endelig_design_landingsside from "../../assets/projectAssets/project4/Endelig_design_landingsside.png";
 
-/*PROJECT 2 */
+/*SKUMRING */
 import Skumring_hoved from "../../assets/projectAssets/project2/Skumring_hoved.svg";
 import Design_thinking from "../../assets/projectAssets/project2/Design_thinking.png";
 import Group_interview from "../../assets/projectAssets/project2/Group_interview.png";
@@ -52,7 +52,7 @@ import Flow1 from "../../assets/projectAssets/project2/Flow1.png";
 import Flyt1 from "../../assets/projectAssets/project2/Flyt1.png";
 import Flyt2 from "../../assets/projectAssets/project2/Flyt2.png";
 
-/*PROJECT 5 */
+/*DISSIMILIS DESIGNSYSTEM */
 import ikonplassering from "../../assets/projectAssets/project5/eksempel_ikonplassering.png";
 import knapp from "../../assets/projectAssets/project5/eksempel_knapp.png";
 import knappetype from "../../assets/projectAssets/project5/eksempel_knappetype.png";
@@ -85,6 +85,24 @@ import typografi_stiler from "../../assets/projectAssets/project5/typografi_stil
 import typografi_størrelser from "../../assets/projectAssets/project5/typografi_størrelser.png";
 import typografi_verktøylinje from "../../assets/projectAssets/project5/typografi_verktøylinje.png";
 import verktøylinje from "../../assets/projectAssets/project5/vertkøylinje.png";
+
+/*VELES */
+
+import DoubleDiamond from "../../assets/projectAssets/Veles/DoubleDiamond.png";
+import Brukerintervju from "../../assets/projectAssets/Veles/Brukerintervju.png";
+import Affinity1 from "../../assets/projectAssets/Veles/Affinity1.png";
+import Affinity2 from "../../assets/projectAssets/Veles/Affinity2.png";
+import CrazyEight from "../../assets/projectAssets/Veles/CrazyEight.png";
+import LowFidelity from "../../assets/projectAssets/Veles/LowFidelity.png";
+import WorkshopVeles from "../../assets/projectAssets/Veles/WorkshopVeles.png";
+import Skisse1 from "../../assets/projectAssets/Veles/Skisse1.png";
+import Skisse2 from "../../assets/projectAssets/Veles/Skisse2.png";
+import Prototyping1 from "../../assets/projectAssets/Veles/Prototyping1.png";
+import Prototyping2 from "../../assets/projectAssets/Veles/Prototyping2.png";
+import Komponenter from "../../assets/projectAssets/Veles/Komponenter.png";
+import Resultat from "../../assets/projectAssets/Veles/Resultat.png";
+import Feltstudie1 from "../../assets/projectAssets/Veles/Feltstudie1.png";
+import Feltstudie2 from "../../assets/projectAssets/Veles/Feltstudie2.png";
 
 const ImageMenu = [
   /*PROJECT 1 - BRUKERNES ØNSKER (EXPERIS) */
@@ -184,6 +202,23 @@ const ImageMenu = [
   { id: 74, image: samlede_komponenter6 },
   { id: 75, image: samlede_komponenter7 },
   { id: 76, image: samlede_komponenter8 },
+
+  /*VELES */
+  { id: 77, image: DoubleDiamond },
+  { id: 78, image: Brukerintervju },
+  { id: 79, image: Affinity1 },
+  { id: 80, image: Affinity2 },
+  { id: 81, image: CrazyEight },
+  { id: 82, image: LowFidelity },
+  { id: 83, image: WorkshopVeles },
+  { id: 84, image: Skisse1 },
+  { id: 85, image: Skisse2 },
+  { id: 86, image: Prototyping1 },
+  { id: 87, image: Prototyping2 },
+  { id: 88, image: Komponenter },
+  { id: 89, image: Resultat },
+  { id: 90, image: Feltstudie1 },
+  { id: 91, image: Feltstudie2 },
 ];
 
 export default ImageMenu;

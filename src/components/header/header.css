@@ -52,6 +52,22 @@
   color: #4d57b3;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Grå overlay */
+  z-index: 2;
+}
+
+/* Når menyen er åpen, vis overlay */
+.overlay.active {
+  display: block;
+}
+
 /*===========BREAKPOINTS ============*/
 /*for medium devices*/
 @media screen and (max-width: 768px) {
@@ -59,9 +75,7 @@
     top: initial;
     bottom: 0;
   }
-  .nav {
-    height: var(--header-height);
-  }
+
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -69,23 +83,21 @@
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px rgba(61, 61, 61, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.3s;
+    transition: 0.5s;
+    z-index: 3;
   }
-  /*Show Menu*/
+
+  /* Show Menu */
   .show-menu {
     bottom: 0;
   }
 
   .nav__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .nav__icon {
-    font-size: 1.2rem;
   }
 
   .nav__close {
@@ -101,10 +113,12 @@
   }
 
   .nav__toggle {
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
+    display: block; /* Vis burger-ikonet på mobil */
   }
 
+  /* Skjuler menyen på mobil hvis den er lukket */
   .nav__icon,
   .nav__close,
   .nav__toggle {

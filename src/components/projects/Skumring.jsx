@@ -5,7 +5,7 @@ import Skumring_hoved from "../../assets/projectAssets/project2/Skumring_hoved.s
 import ZoomableImageGallery from "../image/ZoomableImageGallery";
 import Arrow_upward from "../../assets/projectAssets/allProjects/arrow_upward_skumring.svg";
 
-const Project2 = () => {
+const Skumring = () => {
   return (
     <div id="top">
       {/*Top section with image*/}
@@ -485,4 +485,4 @@ const Project2 = () => {
   );
 };
 
-export default Project2;
+export default Skumring;

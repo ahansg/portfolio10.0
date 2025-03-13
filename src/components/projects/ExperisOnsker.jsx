@@ -9,7 +9,7 @@ import Arrow from "../../assets/projectAssets/allProjects/Arrow 3.svg";
 import Arrow_upward from "../../assets/projectAssets/allProjects/arrow_upward.svg";
 import { Link } from "react-router-dom";
 
-const Project4 = () => {
+const ExperisOnsker = () => {
   return (
     <div id="top">
       <div className="top_section">
@@ -458,13 +458,6 @@ const Project4 = () => {
           </div>
         </div>
 
-        {/*MÅ ORDNE LINK TIL PRESENTASJONEN!!! */}
-        <div className="button_container">
-          <Link to="/project4" className="button-link">
-            <button className="button">Workshop-presentasjonen </button>
-          </Link>
-        </div>
-
         <div className=" project_container">
           <div className="padding_sectioning_headlines">
             <h1 className="level1_headlines">
@@ -499,4 +492,4 @@ const Project4 = () => {
   );
 };
 
-export default Project4;
+export default ExperisOnsker;

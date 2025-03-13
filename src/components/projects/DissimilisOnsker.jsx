@@ -9,7 +9,7 @@ import Arrow_upward from "../../assets/projectAssets/allProjects/arrow_upward.sv
 import { Link } from "react-router-dom";
 import ZoomableImageGallery from "../image/ZoomableImageGallery";
 
-const Project1 = () => {
+const DissimilisOnsker = () => {
   return (
     <div id="top">
       {/*Top section with image*/}
@@ -780,4 +780,4 @@ const Project1 = () => {
   );
 };
 
-export default Project1;
+export default DissimilisOnsker;
