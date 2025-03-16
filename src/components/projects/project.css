@@ -1,4 +1,37 @@
 /* Flexbox for å plassere overskrift og pil på samme linje */
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  row-gap: 20px;
+  column-gap: 80px;
+  justify-items: start; /* Center items horizontally within the grid cells */
+  margin: 0 auto;
+  padding-left: 250px; /* Optional: Add padding to prevent content touching edges */
+  padding-right: 250px;
+}
+
+/*to kolonner*/
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  row-gap: 20px;
+  column-gap: 80px;
+  justify-items: start; /* Center items horizontally within the grid cells */
+  margin: 0 auto;
+  padding-left: 100px; /* Optional: Add padding to prevent content touching edges */
+  padding-right: 100px;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Three equal columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 20px; /* Space between grid items */
+  text-align: center; /* Center text horizontally */
+  justify-items: center; /* Center content horizontally in the grid cells */
+}
 
 /*MARGINER*/
 
@@ -415,8 +448,6 @@
 
 /*===========BREAKPOINTS ============*/
 /*For large devices*/
-@media screen and (max-width: 992px) {
-}
 
 /*MÅ JOBBES VIDERE MED- FINNES DET MINDRE MOBILER I DENNE STR???*/
 /*for small devices*/
@@ -430,10 +461,91 @@
     gap: 10px;
   }
 
+  /*OK*/
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 20px;
+    column-gap: 80px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 100px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 100px;
+  }
+
+  /*OK*/
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 5px;
+    column-gap: 40px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 35px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 35px;
+  }
+
+  .button_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .project_margin_top_container {
+    margin-inline-start: 4%;
+    margin-inline-end: 4%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .project_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .grid-container5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Three equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    gap: 8px; /* Space between grid items */
+    text-align: center; /* Center text horizontally */
+    justify-items: center; /* Center content horizontally in the grid cells */
+  }
+
   .margin_picture_text,
   .padding_image {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .button_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .scroll_button {
+    padding: 12px 20px;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    border: 0.8px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .scroll_button_Veles {
+    padding: 3px 15px;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    border: 1px solid #363f1e;
+    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
@@ -486,23 +598,23 @@
 
   /*Margin på sidene til resten av prosjektet */
   .project_margin_container {
-    margin-inline-start: 4%;
-    margin-inline-end: 4%;
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
   }
 
   /*BUTTONS*/
   .button_container {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
   }
 
   .scroll_button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     font-size: var(--smaller-font-size);
     color: var(--title-color);
-    border: 1px solid #000000;
-    border-radius: 25px;
+    border: 0.8px solid #000000;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -601,32 +713,204 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .project_margin_top_container,
-  .project_margin_container {
-    margin-inline: 2%;
-    padding: 20px;
+@media screen and (max-width: 480px) {
+  .horizontal_line {
+    border: 0;
+    border-top: 2px solid #8e8e8e; /* Tynn svart linje */
+    margin-left: 2%;
+    margin-right: 2%;
+    margin: 20px 0; /* Legger til litt avstand på toppen og bunnen */
   }
-
-  .scroll_button,
-  .button,
-  .button_skumring,
-  .button_Veles {
-    padding: 5px 15px;
-    font-size: var(--smaller-font-size);
-  }
-
-  .bold_text,
-  .bold_text_small,
-  .section_text_small_bold {
-    font-size: var(--small-font-size);
-  }
-
-  .thin_line {
-    margin: 40px;
+  .top_section {
+    background-color: #ecebff; /* Lys lilla bakgrunn */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Dekker hele skjermen */
+    width: 70vh; /* Full bredde */
+    padding: 20px; /* Hindrer at innholdet går helt til kanten */
+    box-sizing: border-box; /* Inkluderer padding i total bredde/høyde */
   }
 
   .top_image {
-    max-width: 70%;
+    max-width: 100%; /* Unngå at bildet blir for bredt på store skjermer */
+    height: auto; /* Bevarer bildeforholdet */
+    display: block;
+    margin: 0 auto; /* Sentrerer bildet */
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    row-gap: 20px;
+    column-gap: 40px;
+    justify-items: start; /* Center items horizontally within the grid cells */
+    margin: 0 auto;
+    padding-left: 40px; /* Optional: Add padding to prevent content touching edges */
+    padding-right: 40px;
+  }
+
+  .top_color_Skumring {
+    background-color: #c0cfeb;
+  }
+
+  .top_color_Veles {
+    background-color: #eaebdd;
+  }
+
+  /*Prosjektets inndeling i to rader nedover*/
+  .project_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+  }
+
+  .padding_headline {
+    padding-bottom: 5px;
+  }
+
+  .project_title {
+    font-size: 1rem;
+  }
+
+  .level2_headlines {
+    margin-inline: 10%;
+  }
+
+  .image_center,
+  .image_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project_margin_top_container {
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  /*Margin på sidene til resten av prosjektet */
+  .project_margin_container {
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+  }
+
+  /*BUTTONS*/
+  .button_container {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .scroll_button {
+    padding: 2px 10px;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .scroll_button_Veles {
+    padding: 3px 15px;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    border: 1px solid #363f1e;
+    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .scroll_button:hover {
+    background-color: #a0a0a0;
+  }
+
+  .button_Veles {
+    padding: 10px 25px;
+    font-size: var(--normal-font-size);
+    background-color: #363f1e;
+    color: #fff;
+    border: 1px solid #363f1e;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: #363f1e 0.3s ease;
+  }
+
+  .scroll_button_Veles:hover {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.1
+    ); /* Svart bakgrunn med 50% opasitet ved hover */
+    color: #000000; /* Hvit tekstfarge ved hover */
+  }
+
+  /*TEKST*/
+  /*Teksten til appen*/
+
+  .project_title {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+  }
+
+  .section-text {
+    font-size: var(--smaller-font-size);
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.5;
+  }
+
+  .section-text {
+    font-size: var(--smaller-font-size);
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .section_text_small_bold {
+    font-size: var(--smaller-font-size);
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: var(--font-semi-bold);
+  }
+
+  .bold_text {
+    font-size: var(--small-font-size);
+    color: #000;
+    font-weight: var(--font-semi-bold);
+    align-items: center;
+  }
+
+  .normal_text {
+    font-size: var(--normal-font-size);
+    text-align: center;
+    color: #000;
+    font-weight: var(--font-normal);
+    align-items: center;
+  }
+  .button {
+    padding: 10px 25px;
+    font-size: var(--normal-font-size);
+    background-color: #1a1d57;
+    color: #fff;
+    border: 1px solid #1a1d57;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: #1a1d57 0.3s ease;
+    white-space: nowrap; /* Forhindrer tekstbryting */
+    text-align: center;
+    max-width: 100%; /* Sikrer at knappen ikke blir for bred */
   }
 }

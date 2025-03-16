@@ -111,7 +111,7 @@ const ExperisOnsker = () => {
       </div>
 
       {/*Margin for hele siden*/}
-      <div className="project_margin_top_container">
+      <div className="project_margin_container">
         {/*ØNSKER FRA BRUKERNE */}
         <div className="project-margin-between-items">
           <div class="thin_line line_with_text">
@@ -153,18 +153,16 @@ const ExperisOnsker = () => {
 
             <ZoomableImageGallery id="19" className="project_image" />
 
-            <div className="grid_container_buttons">
-              <div className="button_container">
-                <Link to="/project1" className="button-link">
-                  <button className="button">Ønsker fra brukerne </button>
-                </Link>
-              </div>
+            <div className="button_container">
+              <Link to="/DissimilisOnsker" className="button-link">
+                <button className="button">Ønsker fra brukerne</button>
+              </Link>
+            </div>
 
-              <div className="button_container">
-                <Link to="/project5" className="button-link">
-                  <button className="button">Designsystem</button>
-                </Link>
-              </div>
+            <div className="button_container">
+              <Link to="/DissimilisDesignsystem" className="button-link">
+                <button className="button">Designsystem</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -185,24 +183,24 @@ const ExperisOnsker = () => {
         </section>
 
         <div className="project_container">
-          <div className="padding_sectioning">
-            <h1 className="level1_headlines">Bakgrunn</h1>
-          </div>
+          <h1 className="level1_headlines">Bakgrunn</h1>
 
-          <p className="body_text">
-            Ved flere anledninger hadde brukerne av appen sendt inn
-            tilbakemeldinger med mangler i appen. Det var en tungvindt prosess
-            der brukeren måtte snakke med sin nærmeste leder i Dissimilis, slik
-            at lederen kunne sende tilbakemeldingen til produkteier i Experis.
-            Produkteier måtte så videresende mailen til den personen som kunne
-            løse problemet.
-            <br />
-            <br />
-            Grunnet denne lange prosessen, ønsket Experis at sommerprosjektet
-            skulle lage et tilbakemeldingsskjema som gjorde opplevelsen enklere
-            for brukerne og Experis. Målet var også å kunne få inn flere
-            tilbakemeldinger.
-          </p>
+          <div className="padding_sectioning">
+            <p className="body_text">
+              Ved flere anledninger hadde brukerne av appen sendt inn
+              tilbakemeldinger med mangler i appen. Det var en tungvindt prosess
+              der brukeren måtte snakke med sin nærmeste leder i Dissimilis,
+              slik at lederen kunne sende tilbakemeldingen til produkteier i
+              Experis. Produkteier måtte så videresende mailen til den personen
+              som kunne løse problemet.
+              <br />
+              <br />
+              Grunnet denne lange prosessen, ønsket Experis at sommerprosjektet
+              skulle lage et tilbakemeldingsskjema som gjorde opplevelsen
+              enklere for brukerne og Experis. Målet var også å kunne få inn
+              flere tilbakemeldinger.
+            </p>
+          </div>
 
           {/* Brukerhistorie plassert utenfor grid */}
           <div className="text_centeralign grid_placement2 user_story_padding">

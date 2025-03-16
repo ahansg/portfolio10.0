@@ -178,18 +178,16 @@ const DissimilisOnsker = () => {
             </section>
             <ZoomableImageGallery id="2" />
 
-            <div className="grid_container_buttons">
-              <div className="button_container">
-                <Link to="/project4" className="button-link">
-                  <button className="button">Til Experis' ønsker</button>
-                </Link>
-              </div>
+            <div className="button_container">
+              <Link to="/project4" className="button-link">
+                <button className="button">Til Experis' ønsker</button>
+              </Link>
+            </div>
 
-              <div className="button_container">
-                <Link to="/project5" className="button-link">
-                  <button className="button">Designsystem</button>
-                </Link>
-              </div>
+            <div className="button_container">
+              <Link to="/project5" className="button-link">
+                <button className="button">Designsystem</button>
+              </Link>
             </div>
           </div>
         </div>
