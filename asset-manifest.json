@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.87d7a595.css",
-    "main.js": "/static/js/main.cc944a2d.js",
+    "main.css": "/static/css/main.351964d1.css",
+    "main.js": "/static/js/main.afbb1b75.js",
     "static/media/Flow1.png": "/static/media/Flow1.072af6baf685f8bf0087.png",
     "static/media/Skumring_hoved.svg": "/static/media/Skumring_hoved.0705ae49a2d953fda4787c0c32754e3c.svg",
     "static/media/anna.jpg": "/static/media/anna.b820b215f1f00f4a85e0.jpg",
@@ -116,11 +116,11 @@
     "static/media/Arrow_Veles.svg": "/static/media/Arrow_Veles.89693a06004050e2be13ea09dcabedcf.svg",
     "static/media/Arrow 3.svg": "/static/media/Arrow 3.0de72cdcd2c72b54f7163bb83eda682c.svg",
     "static/media/menu_icon.svg": "/static/media/menu_icon.af462a2b1741f8ea1e32233e251a1215.svg",
-    "main.87d7a595.css.map": "/static/css/main.87d7a595.css.map",
-    "main.cc944a2d.js.map": "/static/js/main.cc944a2d.js.map"
+    "main.351964d1.css.map": "/static/css/main.351964d1.css.map",
+    "main.afbb1b75.js.map": "/static/js/main.afbb1b75.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d7a595.css",
-    "static/js/main.cc944a2d.js"
+    "static/css/main.351964d1.css",
+    "static/js/main.afbb1b75.js"
   ]
 }
