@@ -221,11 +221,41 @@
 
 /* Justering for skjermer med max-width 768px */
 
+@media (max-width: 1200px) {
+  .work_container {
+    display: flex;
+    flex-wrap: wrap; /* Lar kortene brytes til flere linjer */
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem; /* Fjern padding */
+  }
+
+  .button_wrapper {
+    display: flex;
+    gap: 15px; /* Gir litt avstand mellom knappene */
+    justify-content: flex-end; /* Sørger for at knappene er på høyre side */
+    flex: 1; /* Gir plass til knappene på høyre side */
+    padding: 0 2rem; /* Fjern padding */
+  }
+
+  .portfolio_title {
+    color: #2a2a2a;
+    font-size: var(--h3-font-size);
+    font-family: var(--body-font), serif;
+    font-weight: var(--font-normal);
+    margin: 0;
+    text-align: left; /* Justerer teksten til venstre */
+    flex: 1; /* Får "PROSJEKTER" til å ta opp all tilgjengelig plass på venstre side */
+    padding: 0 2rem; /* Fjern padding */
+  }
+}
+
 @media (max-width: 768px) {
   .work_thumbnail {
     width: 40%;
     margin: 0;
   }
+
   /* Bruk flexbox for å vise bildene og teksten ved siden av hverandre */
   .work_card {
     display: flex; /* Bruk flexbox */

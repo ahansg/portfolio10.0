@@ -180,22 +180,8 @@ const Veles = () => {
             </div>
           </div>
 
-          <div className="image_right_margin">
+          <div className="image_right_margin picture_padding_top">
             <ZoomableImageGallery id="77" />
-          </div>
-        </div>
-        {/*MÅ LEGGE INN RIKTIGE LENKER */}
-        <div className="grid_container_buttons">
-          <div className="button_container">
-            <Link to="/project4" className="button-link">
-              <button className="button_Veles">Til Nettside</button>
-            </Link>
-          </div>
-
-          <div className="button_container">
-            <Link to="/project5" className="button-link">
-              <button className="button_Veles">Video</button>
-            </Link>
           </div>
         </div>
 

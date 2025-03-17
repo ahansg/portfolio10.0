@@ -89,15 +89,16 @@
 
 /*===========BREAKPOINTS ============*/
 
-/*
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .about_container {
-    grid-template-columns: 1fr;
-    row-gap: 2.5rem;
+    max-width: 1000px; /* Hindrer at innholdet blir for bredt */
+    padding: 0 3rem; /* Gir mer luft på sidene */
+    margin: 0 auto; /* Sentrerer innholdet */
   }
+
   .about__img {
-    width: 220px;
+    max-width: 100%; /* Sørger for at bildet ikke overskrider containeren */
+    height: auto; /* Beholder bildeproposjoner */
   }
   .about__box {
     padding: 0.75rem 0.5rem;
@@ -118,7 +119,7 @@
     row-gap: 2.5rem;
   }
 }
-*/
+
 @media screen and (max-width: 768px) {
   .about_margin_top {
     margin-top: 100px;

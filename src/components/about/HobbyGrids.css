@@ -12,6 +12,14 @@
   .masonry-container {
     column-count: 3; /* Færre kolonner på mindre skjermer */
   }
+  .masonry-container {
+    column-count: 4; /* Antall kolonner */
+    column-gap: 10px; /* Avstand mellom kolonnene */
+    padding: 0 3rem; /* Fjern padding */
+    margin: 0 auto; /* Sentrer containeren */
+    width: 100%; /* Bruk hele bredden av skjermen */
+    max-width: 1200px; /* Valgfritt: Begrens maksimal bredde for store skjermer */
+  }
 }
 
 @media (max-width: 768px) {
