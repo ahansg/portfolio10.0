@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.351964d1.css",
-    "main.js": "/static/js/main.afbb1b75.js",
+    "main.css": "/static/css/main.f67fb78b.css",
+    "main.js": "/static/js/main.b43692e0.js",
     "static/media/Flow1.png": "/static/media/Flow1.072af6baf685f8bf0087.png",
     "static/media/Skumring_hoved.svg": "/static/media/Skumring_hoved.0705ae49a2d953fda4787c0c32754e3c.svg",
     "static/media/anna.jpg": "/static/media/anna.b820b215f1f00f4a85e0.jpg",
     "static/media/Flyt_2.png": "/static/media/Flyt_2.8deecd64bb9153e39d93.png",
     "static/media/Workshop.png": "/static/media/Workshop.76e9508c50fa67789c1c.png",
-    "static/media/CV.pdf": "/static/media/CV.3c3f4c71020a4e7548ac.pdf",
+    "static/media/CV.pdf": "/static/media/CV.79eac7edbd4c507fbb6c.pdf",
     "static/media/WorkshopVeles.png": "/static/media/WorkshopVeles.fe353475e1b6c575676c.png",
     "static/media/GeriljaBilde.png": "/static/media/GeriljaBilde.74bae4c09f39986a8018.png",
     "static/media/Feltstudie2.png": "/static/media/Feltstudie2.85af566def6103cca861.png",
@@ -108,19 +108,19 @@
     "static/media/brukerne.png": "/static/media/brukerne.786b19f33905351188e0.png",
     "static/media/endring_dropdown2.png": "/static/media/endring_dropdown2.e152478b0f0074c7f7fd.png",
     "static/media/Arrow_side.svg": "/static/media/Arrow_side.61d61015babf2561f30615909decb790.svg",
-    "static/media/arrow_down.svg": "/static/media/arrow_down.5bb101d7afaff386f43187a77cd83756.svg",
     "index.html": "/index.html",
+    "static/media/arrow_down.svg": "/static/media/arrow_down.5bb101d7afaff386f43187a77cd83756.svg",
     "static/media/arrow_upward.svg": "/static/media/arrow_upward.8a9421f82cd5f354cd2079371b1fe3fc.svg",
     "static/media/arrow_upward_skumring.svg": "/static/media/arrow_upward_skumring.7d9b275452d5b3858aad4793d29a9237.svg",
     "static/media/Arrow_Upward_Veles.svg": "/static/media/Arrow_Upward_Veles.d7d8275d41ce9ed21a4c7d867e58b600.svg",
     "static/media/Arrow_Veles.svg": "/static/media/Arrow_Veles.89693a06004050e2be13ea09dcabedcf.svg",
     "static/media/Arrow 3.svg": "/static/media/Arrow 3.0de72cdcd2c72b54f7163bb83eda682c.svg",
     "static/media/menu_icon.svg": "/static/media/menu_icon.af462a2b1741f8ea1e32233e251a1215.svg",
-    "main.351964d1.css.map": "/static/css/main.351964d1.css.map",
-    "main.afbb1b75.js.map": "/static/js/main.afbb1b75.js.map"
+    "main.f67fb78b.css.map": "/static/css/main.f67fb78b.css.map",
+    "main.b43692e0.js.map": "/static/js/main.b43692e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.351964d1.css",
-    "static/js/main.afbb1b75.js"
+    "static/css/main.f67fb78b.css",
+    "static/js/main.b43692e0.js"
   ]
 }
