@@ -1,9 +1,9 @@
-/* Hide the checkbox by default */
+/*
+
 .click-zoom input[type="checkbox"] {
   display: none;
 }
 
-/* Image styling */
 .click-zoom img {
   transition: transform 0.25s ease;
   cursor: zoom-in;
@@ -13,13 +13,13 @@
   margin: 0 auto;
 }
 
-/* When the image is zoomed in (checkbox is checked) */
+
 .click-zoom input[type="checkbox"]:checked + img {
-  transform: scale(1.5); /* Adjust scale factor as needed */
+  transform: scale(1.5); 
   cursor: zoom-out;
 }
 
-/* The overlay when zoomed in */
+
 .click-zoom input[type="checkbox"]:checked ~ .zoom-overlay {
   display: block;
   position: fixed;
@@ -27,13 +27,136 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+  background-color: rgba(0, 0, 0, 0.7); 
   z-index: 10;
   cursor: zoom-out;
   opacity: 0.7;
 }
 
-/* Hide overlay by default */
+
 .zoom-overlay {
   display: none;
+}
+*/
+
+/* Styling for image gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.zoomable-image {
+  cursor: pointer;
+}
+
+/* Modal overlay (dark background) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal close button */
+.modal-close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  transform: scale(1.2);
+  color: #daddf3;
+}
+
+/* Modal content container */
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal image */
+.modal-image {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain; /* Bevarer proporsjonene */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.modal-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation buttons */
+.modal-nav-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal-nav-btn img {
+  width: 45%;
+  height: auto;
+}
+
+.modal-nav-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.modal-nav-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.modal-nav-btn-left {
+  left: 5%;
+}
+
+.modal-nav-btn-right {
+  right: 5%;
 }
