@@ -89,7 +89,7 @@ const Skumring = () => {
             <br></br>
             <p className="bold_text">Verktøy</p>
             <p className="body_text"> Figma, Miro, Trello, Kotlin, Git</p>
-            Juni 2024 - august 2024 <br></br>
+            Januar 2024 - juni 2024 <br></br>
           </p>
         </section>
 
