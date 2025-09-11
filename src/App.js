@@ -38,12 +38,12 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/dissimilisOnsker" element={<DissmilisOnsker />} />
+          <Route path="/dissimilisonsker" element={<DissmilisOnsker />} />
           <Route path="/dkumring" element={<Skumring />} />
-          <Route path="/deles" element={<Veles />} />
-          <Route path="/experisOnsker" element={<ExperisOnsker />} />
+          <Route path="/veles" element={<Veles />} />
+          <Route path="/experisonsker" element={<ExperisOnsker />} />
           <Route
-            path="/dissimilisDesignsystem"
+            path="/dissimilisdesignsystem"
             element={<DissimilisDesignsystem />}
           />
         </Routes>

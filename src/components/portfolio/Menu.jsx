@@ -11,7 +11,7 @@ const Menu = [
     title: "Brukernes ønsker",
     subtitle: "-Dissimilis fargenotasjon",
     category: "Nettside",
-    path: "/dissimilisOnsker",
+    path: "/dissimilisonsker",
     style: "#E5E4FF",
   },
   {
@@ -38,7 +38,7 @@ const Menu = [
     title: "Experis Solutions ønsker",
     subtitle: "- Dissimilis fargenotasjon",
     category: "Nettside",
-    path: "/experisOnsker",
+    path: "/experisonsker",
     style: "#E5E4FF",
   },
   {
@@ -47,7 +47,7 @@ const Menu = [
     title: "Designsystem",
     subtitle: "- Dissimilis fargenotasjonsapp",
     category: "Designsystem",
-    path: "/dissimilisDesignsystem",
+    path: "/dissimilisdesignsystem",
     style: "#E5E4FF",
   },
 ];

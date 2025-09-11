@@ -154,13 +154,13 @@ const ExperisOnsker = () => {
             <ZoomableImageGallery id="19" className="project_image" />
 
             <div className="button_container">
-              <Link to="/DissimilisOnsker" className="button-link">
+              <Link to="/dissimilisonsker" className="button-link">
                 <button className="button">Ønsker fra brukerne</button>
               </Link>
             </div>
 
             <div className="button_container">
-              <Link to="/DissimilisDesignsystem" className="button-link">
+              <Link to="/dissimilisdesignsystem" className="button-link">
                 <button className="button">Designsystem</button>
               </Link>
             </div>

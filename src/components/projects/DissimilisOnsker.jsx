@@ -179,13 +179,13 @@ const DissimilisOnsker = () => {
             <ZoomableImageGallery id="2" />
 
             <div className="button_container">
-              <Link to="/ExperisOnsker" className="button-link">
+              <Link to="/experisonsker" className="button-link">
                 <button className="button">Til Experis' ønsker</button>
               </Link>
             </div>
 
             <div className="button_container">
-              <Link to="/DissimilisDesignsystem" className="button-link">
+              <Link to="/dissimilisdesignsystem" className="button-link">
                 <button className="button">Designsystem</button>
               </Link>
             </div>
